@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <title>CSS Grid Fundamentals!</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- div..item.item${$}*10 -->
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div>
+    <div class="item item10">10</div>
+    <div class="item item11">11</div>
+    <div class="item item12">12</div>
+
+  </div>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .item9 {
+      /* grid-column-start: 1;
+      grid-column-end: span 3; */
+      /*ShortCut*/
+      grid-column: 1/3;
+      /*Bu start değeri veya 1. değer kolonun nereden başlayacağını
+      end değeri veya 2.değer ise kolonun nerede biteceğini gösterir.
+      eğer başlangıç değerini 1 ve bitiş değerini -1 yaparsan kolon ve satır için
+      bu senin yukarda belirlemiş olduğum explicit grid boyutunu komple kaplar
+      bitiş değerini span ile belirtebilirsin.
+      Bu değer end Değerini kapsamaz. yani end değerine kadar olan*/
+    }
+  </style>
+</body>
+
+</html>

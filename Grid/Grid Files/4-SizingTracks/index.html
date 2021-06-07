@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <title>CSS Grid Fundamentals!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+
+  </div>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 20px;
+      border: 10px solid yellow;
+      grid-template-columns: 200px 200px 1fr;
+      /*fr Fractional unit : bunun anlamı ise ilk iki kolondan geriye kalan boş yeri 0 ile 1 arasında yazdığın fr kadar
+      yani yeni gelen kolon kalan kısmın kaçını kaplayacak yüzde olarak paylaştırmanı sağlar. */
+
+    }
+  </style>
+</body>
+
+</html>
